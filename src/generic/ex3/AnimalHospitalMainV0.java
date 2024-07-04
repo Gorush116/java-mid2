@@ -1,14 +1,13 @@
-package generic.test.ex3;
+package generic.ex3;
 
 import generic.animal.Cat;
 import generic.animal.Dog;
 
-public class AnimalHospitalMainV3 {
+public class AnimalHospitalMainV0 {
 
     public static void main(String[] args) {
-        AnimalHospitalV3<Dog> dogHospital = new AnimalHospitalV3<>();
-        AnimalHospitalV3<Cat> catHospital = new AnimalHospitalV3<>();
-//        AnimalHospitalV3<Integer> integerHospital = new AnimalHospitalV3<>(); // java: type argument java.lang.Integer is not within bounds of type-variable T
+        DogHospital dogHospital = new DogHospital();
+        CatHospital catHospital = new CatHospital();
 
         Dog dog = new Dog("멍멍이1", 100);
         Cat cat = new Cat("냐옹이1", 300);
@@ -22,7 +21,7 @@ public class AnimalHospitalMainV3 {
         catHospital.checkup();
 
         // 문제1 : 개 병원에 고양이 전달
-//        dogHospital.set(cat); // 다른 타입 입력 : 컴파일 오류
+//        dogHospital.set(cat); // java: incompatible types: generic.animal.Cat cannot be converted to generic.animal.Dog
 
         // 문제2 : 개 타입 변환
         dogHospital.set(dog);
