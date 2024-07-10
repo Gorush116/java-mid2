@@ -20,6 +20,8 @@ public class StringHashMain {
         System.out.println("hashIndex(A) = " + hashIndex(hashCode("A")));
         System.out.println("hashIndex(B) = " + hashIndex(hashCode("B")));
         System.out.println("hashIndex(AB) = " + hashIndex(hashCode("AB")));
+        
+        // 해시 함수를 통해 해시코드 얻음 -> 해시코드로 해시인덱스를 구할 수 있음
     }
 
     private static int hashIndex(int value) {
