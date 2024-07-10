@@ -27,6 +27,10 @@ public class MyHashSetV0 {
         return false;
     }
 
+    public int size() {
+        return size;
+    }
+
     @Override
     public String toString() {
         return "MyHashSetV0{" +
