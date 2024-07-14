@@ -5,9 +5,21 @@ import java.util.List;
 
 public class Player {
 
+    /*
+        플레이어 멤버변수
+        1. 이름
+        2. 손패
+     */
     private String name;
     private List<Card> hand;
 
+    /*
+        플레이어 기능
+        1. 생성자(param : 이름)
+        2. 카드 봅기
+        3. 손에 있는 카드 숫자 합 계산
+        4. 카드 기준에 맞춰 정렬
+     */
     public Player(String name) {
         this.name = name;
         this.hand = new ArrayList<>();

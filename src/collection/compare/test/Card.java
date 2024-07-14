@@ -3,13 +3,21 @@ package collection.compare.test;
 public class Card implements Comparable<Card> {
 
     // 카드 멤버변수
+    /*
+        트럼프 카드에 필요한 요소
+        - 문양
+        - 숫자
+     */
     private Suit suit;
     private int rank;
 
 
     // 카드 메서드
     /*
-        1. 모양 및 번호 비교
+        1. 생성자
+        2. Getter
+        3. 다른 카드와 비교
+            - Comparable 인터페이스 구현해야 함
      */
     public Card(int rank, Suit suit) {
         this.rank = rank;
